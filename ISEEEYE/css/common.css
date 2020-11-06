@@ -123,8 +123,14 @@ div.wrap > section#nav > ul#menu-items > li > a > div#team:hover {
 }
 
 /* contents */
-
-div.wrap > section.contents {
+div.wrap > section.contents > div:first-child {
+    position: absolute; right: 0;
+    /* border: 1px solid red;  */
+    width: 842px; height: 510px;
+    top:50%;
+    transform: translateY(-50%);
+    margin-right: 100px;
+    transition: all ease-in-out 500ms;
 }
 
 
@@ -143,7 +149,7 @@ div#backgroundtest1 {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    animation: rotate2 100s linear infinite;
+    animation: rotate2 200s linear infinite;
 }
 div#backgroundtest2 {
     position: fixed;
@@ -154,7 +160,7 @@ div#backgroundtest2 {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    animation: rotate2 100s linear infinite;
+    animation: rotate2 200s linear infinite;
 }
 div#backgroundtest3 {
     position: fixed;
@@ -165,7 +171,7 @@ div#backgroundtest3 {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    animation: rotate1 100s linear infinite;
+    animation: rotate1 200s linear infinite;
 }
 @keyframes rotate1 {
     100% {
