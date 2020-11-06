@@ -41,14 +41,17 @@ div.wrap > section.contents > div:first-child > div.circle_wrap > div:nth-child(
     margin-left: -30px;
     animation: cir1 900ms ease-in-out forwards;
 }
+
 div.wrap > section.contents > div:first-child > div.circle_wrap > div:nth-child(2) {
-    left: 160px;
+    padding: 68px 0 68px 0;
+    line-height: 1.6;
+    left: 170px;
     margin-left: -30px;
     animation: cir1 900ms 600ms ease-in-out forwards;
 
 }
 div.wrap > section.contents > div:first-child > div.circle_wrap > div:nth-child(3) {
-    left: 320px;
+    left: 340px;
     margin-left: -30px;
     animation: cir1 900ms 1200ms ease-in-out forwards;
 
@@ -65,7 +68,7 @@ div.wrap > section.contents > div:first-child > div.circle_wrap > div:last-child
 
     margin-left: -30px;
 
-    animation: cir1 900ms 2400ms ease-in-out forwards;
+    animation: cir1 900ms 2100ms ease-in-out forwards;
 }
 
 @keyframes cir1 {
@@ -79,7 +82,7 @@ div.wrap > section.contents > div:first-child > div.circle_wrap > div:last-child
 div.wrap > section.contents > div:first-child > div.circle_wrap > div.circleLine {
     border-bottom: 2px solid #ffffff;
     position: absolute;
-    right: 250px;
+    right: 230px;
     margin-top: -80px;
     height: 1px;
     width: 68px;
