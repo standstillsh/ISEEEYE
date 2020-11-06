@@ -1,0 +1,220 @@
+/* common.css */
+* {margin:0; padding:0}
+html {background-color:#000;}
+body, html {height: 100%; width: 100%;
+line-height: 1;font-family: 'Roboto', sans-serif;
+overflow: hidden; color: #fff;
+/* cursor: auto; */
+}
+a {color: #fff; text-decoration: none;}
+
+/* 폰트 Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* 영문 Roboto */
+/* font-family: 'Roboto', sans-serif; */
+
+/* 한글 Noto Sans */
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+div.wrap {
+    width: 100vw; height: 100vh;
+}
+div.wrap > section#nav {
+    position: fixed; left: 0; 
+    height: 100vh; width: 28vw;
+    /* border: 1px solid red; */
+}
+div.wrap > section#nav > div#menu-bar {
+    display: block;
+    z-index: 100;
+    width: 133px; height: 133px;
+    /* background-color: #fff; */
+    border: 2px solid #fff;
+    border-radius: 100%;
+    position: absolute; top: 50%; transform: translateY(-50%);
+    left: -66px; 
+    /* position: fixed; top: 50vh; margin-top: -66px; */
+    animation: pingpong 2000ms ease-in-out infinite;
+    transition: all ease-in-out 500ms;
+}
+div.wrap > section#nav > div#menu-bar:hover {
+    background-color: #fff; 
+    animation-play-state: paused;
+}
+@keyframes pingpong {
+    0% {left: -66px}
+    50% {left: -45px}
+    100% {left: -66px}
+}
+
+
+div.wrap > section#nav > ul#menu-items {
+    /* border: 1px solid red; */
+    height: 730px; width: 346px;
+    position: absolute; top: 50%; transform: translateY(-50%);
+    /* left: 0; */
+    left: -150%;
+    transition: all ease-in-out 700ms;
+}
+
+div.wrap > section#nav > ul#menu-items > li {}
+div.wrap > section#nav > ul#menu-items > li > a {
+    display: block; 
+}
+div.wrap > section#nav > ul#menu-items > li > a > div.menu-card {
+    width: 151px; height: 258px;
+    /* background-image: url('../image/menu-card.png'); */
+    background-size: cover;
+    position: fixed;
+    text-align: right;
+    transition: all ease-in-out 400ms;
+}
+
+/* div.menu-card 개별 */
+div.wrap > section#nav > ul#menu-items > li > a > div#intro {
+    transform: rotate(30deg);
+    top: 0; left: 0;
+    z-index: 20;
+    background-image: url('../image/menu-card1.png');
+}
+div.wrap > section#nav > ul#menu-items > li > a > div#about {
+    transform: rotate(60deg);
+    top: 100px; left: 120px;
+    z-index: 19;
+    background-image: url('../image/menu-card2.png');
+}
+div.wrap > section#nav > ul#menu-items > li > a > div#contents {
+    transform: rotate(90deg);
+    top: 230px; left: 170px;
+    z-index: 18;    
+    background-image: url('../image/menu-card3.png');
+}
+div.wrap > section#nav > ul#menu-items > li > a > div#video {
+    transform: rotate(120deg);
+    bottom: 100px; left: 120px;
+    z-index: 17;
+    background-image: url('../image/menu-card4.png');
+}
+div.wrap > section#nav > ul#menu-items > li > a > div#team {
+    transform: rotate(150deg);
+    bottom: 0; left: 0;
+    z-index: 16;
+    background-image: url('../image/menu-card5.png');
+}
+/* div.menu-car hover 호버 */
+div.wrap > section#nav > ul#menu-items > li > a > div.menu-card:hover{
+    box-shadow: 0 0 20px #fff;   
+}
+div.wrap > section#nav > ul#menu-items > li > a > div#intro:hover {
+    top: -20px; left: 20px;
+}
+div.wrap > section#nav > ul#menu-items > li > a > div#about:hover {
+    top: 80px; left: 140px;
+}
+div.wrap > section#nav > ul#menu-items > li > a > div#contents:hover {
+    left: 190px;
+}
+div.wrap > section#nav > ul#menu-items > li > a > div#video:hover {
+    bottom: 80px; left: 140px;
+}
+div.wrap > section#nav > ul#menu-items > li > a > div#team:hover {
+    bottom: -20px; left: 20px;
+}
+
+/* contents */
+
+div.wrap > section.contents {
+}
+
+
+/* 배경 원 요소 회전 */
+div.bgbox {
+    opacity: 0.3;
+    z-index: -10;
+}
+
+div#backgroundtest1 {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: yellow; */
+    background-image: url(../image/background1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation: rotate2 100s linear infinite;
+}
+div#backgroundtest2 {
+    position: fixed;
+    left: -30vw; top: -30vh;
+    width: 160vw;
+    height: 160vh;
+    background-image: url(../image/background2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation: rotate2 100s linear infinite;
+}
+div#backgroundtest3 {
+    position: fixed;
+    left: -5vw; top: -5vh;
+    width: 110vw;
+    height: 110vh;
+    background-image: url(../image/background3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation: rotate1 100s linear infinite;
+}
+@keyframes rotate1 {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate2 {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+/* 반응형 */
+@media (min-width: 1600px) {
+    /* 브라우저 너비에 따른 카드 메뉴 크기 변화 */
+    div.wrap > section#nav > ul#menu-items > li > a > div.menu-card {
+        /* width: 151px; height: 258px; */
+        width: 181px; height: 309px;
+    }
+    /* div.menu-card 개별 */
+    div.wrap > section#nav > ul#menu-items > li > a > div#intro {
+        top: -70px; left: 60px;
+    }
+    div.wrap > section#nav > ul#menu-items > li > a > div#about {
+        top: 60px; left: 220px;
+    }
+    div.wrap > section#nav > ul#menu-items > li > a > div#contents {
+        top: 230px; left: 260px;
+    }
+    div.wrap > section#nav > ul#menu-items > li > a > div#video {
+        bottom: 30px; left: 220px;
+    }
+    div.wrap > section#nav > ul#menu-items > li > a > div#team {
+        bottom: -100px; left: 60px;
+    }
+    /* div.menu-car hover 호버 */
+    div.wrap > section#nav > ul#menu-items > li > a > div#intro:hover {
+        top: -90px; left: 80px;
+    }
+    div.wrap > section#nav > ul#menu-items > li > a > div#about:hover {
+        top: 40px; left: 240px;
+    }
+    div.wrap > section#nav > ul#menu-items > li > a > div#contents:hover {
+        left: 300px;
+    }
+    div.wrap > section#nav > ul#menu-items > li > a > div#video:hover {
+        bottom: 10px; left: 250px;
+    }
+    div.wrap > section#nav > ul#menu-items > li > a > div#team:hover {
+        bottom: -120px; left: 80px;
+    }
+}
