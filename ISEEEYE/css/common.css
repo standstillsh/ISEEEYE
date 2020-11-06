@@ -133,6 +133,12 @@ div.wrap > section.contents > div:first-child {
     transition: all ease-in-out 500ms;
 }
 
+/* 상단 로고 */
+div.wrap > div#logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
 
 /* 배경 원 요소 회전 */
 div.bgbox {

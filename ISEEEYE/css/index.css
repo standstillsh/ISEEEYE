@@ -5,9 +5,8 @@ div.wrap {
     background-position: 190%; */
 }
 
-
-
 div.wrap > section.main > div#main-wrap > div#inform1 {}
+
 div.wrap > section.main > div#main-wrap > div#inform1 > span {
     display: block;
 }
