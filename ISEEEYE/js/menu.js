@@ -1,8 +1,8 @@
 // menu 인터랙션
-console.log("Script Load");
+// console.log("Script Load");
 (function($) {
     $(document).ready(function() {
-        console.log('menu.js jQuery Ready');
+        // console.log('menu.js jQuery Ready');
         
         var IsMouseIn = false;
 
