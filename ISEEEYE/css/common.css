@@ -55,7 +55,7 @@ div.wrap > section#nav > ul#menu-items {
     height: 730px; width: 346px;
     position: absolute; top: 50%; transform: translateY(-50%);
     /* left: 0; */
-    left: -150%;
+    left: -180%;
     transition: all ease-in-out 700ms;
 }
 
