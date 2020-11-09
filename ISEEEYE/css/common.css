@@ -21,7 +21,7 @@ div.wrap {
     width: 100vw; height: 100vh;
 }
 div.wrap > section#nav {
-    position: fixed; left: 0;
+    position: fixed; left: 0; top: 0;
     z-index: 5; 
     height: 100vh; width: 18vw;
     /* border: 1px solid red; */
@@ -151,6 +151,7 @@ div#backgroundtest1 {
     position: fixed;
     width: 100vw;
     height: 100vh;
+    top: 5vh;
     /* background-color: yellow; */
     background-image: url(../image/background1.png);
     background-repeat: no-repeat;
@@ -160,7 +161,7 @@ div#backgroundtest1 {
 }
 div#backgroundtest2 {
     position: fixed;
-    left: -30vw; top: -30vh;
+    left: -30vw; top: -25vh;
     width: 160vw;
     height: 160vh;
     background-image: url(../image/background2.png);
@@ -171,7 +172,7 @@ div#backgroundtest2 {
 }
 div#backgroundtest3 {
     position: fixed;
-    left: -5vw; top: -5vh;
+    left: -5vw; top: 0;
     width: 110vw;
     height: 110vh;
     background-image: url(../image/background3.png);
@@ -200,19 +201,19 @@ div#backgroundtest3 {
     }
     /* div.menu-card 개별 */
     div.wrap > section#nav > ul#menu-items > li > a > div#intro {
-        top: -70px; left: 60px;
+        top: -70px; left: 50px;
     }
     div.wrap > section#nav > ul#menu-items > li > a > div#about {
-        top: 60px; left: 220px;
+        top: 60px; left: 200px;
     }
     div.wrap > section#nav > ul#menu-items > li > a > div#contents {
         top: 230px; left: 260px;
     }
     div.wrap > section#nav > ul#menu-items > li > a > div#video {
-        bottom: 30px; left: 220px;
+        bottom: 60px; left: 200px;
     }
     div.wrap > section#nav > ul#menu-items > li > a > div#team {
-        bottom: -100px; left: 60px;
+        bottom: -70px; left: 50px;
     }
     /* div.menu-car hover 호버 */
     div.wrap > section#nav > ul#menu-items > li > a > div#intro:hover {
@@ -225,9 +226,14 @@ div#backgroundtest3 {
         left: 300px;
     }
     div.wrap > section#nav > ul#menu-items > li > a > div#video:hover {
-        bottom: 10px; left: 250px;
+        bottom: 40px; left: 250px;
     }
     div.wrap > section#nav > ul#menu-items > li > a > div#team:hover {
-        bottom: -120px; left: 80px;
+        bottom: -90px; left: 80px;
+    }
+
+
+    div.wrap > section.contents > div:first-child {
+        margin-right: 200px;
     }
 }
