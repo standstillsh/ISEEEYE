@@ -1,10 +1,37 @@
 
 
-section.cardcontent > div.explain_wrap{
-    background-color: rgba(250, 128, 114, 0.409); width: 600px; height: 500px; position: absolute;
-    top: 50%; transform: translateY(-50%); left: 30%; opacity: 0; transition: 800ms;
+
+
+
+
+
+
+section.intro{
+    width: 100%; height: 100%; background-color: #000000b3; z-index: 99; display: flex; justify-content: center;
+    align-items: center;
 }
-section.cardcontent > p > span{}
-section.cardcontent > div.explain_wrap > p.title{font-size: 40px; margin: 40px 0 40px 40px; display: none;}
-section.cardcontent > div.explain_wrap > p.title_2{font-size: 40px; margin: 40px 0 40px 40px; display: block;}
-section.cardcontent > div.explain_wrap > p.explain{font-size: 20px; margin-left: 40px;}
+section.intro > div.intro_wrap{display: inline-block;}
+section.intro > div.intro_wrap > p{text-align: center; line-height: 40px; font-size: 20px;}
+section.intro > div.intro_wrap > button{
+    color: #fff;background-color: transparent; outline: none; border: 1px solid #fff; margin: 30px auto 0;
+    font-size: 25px; padding: 5px; border-radius: 5px; vertical-align: bottom; line-height: 1; display: block;
+    transition: 800ms;
+}
+section.intro > div.intro_wrap > button:hover{box-shadow: 0 0 10px #fff, 0 0 20px rgb(93, 93, 93)}
+
+
+section.cardcontent > div.explain_wrap{
+    background-color: rgba(0, 0, 0, 0.608); width: 600px; height: 500px; position: absolute;
+    top: 50%; transform: translateY(-50%); left: 30%; opacity: 0; transition: 800ms;  pointer-events: none;
+}
+section.cardcontent > div.explain_wrap > div.p_wrap {position: absolute; top: 50%; transform: translateY(-50%);}
+section.cardcontent > div.explain_wrap > div.p_wrap > p{font-family: 'Noto Sans KR', sans-serif;}
+section.cardcontent > div.explain_wrap > div.p_wrap > p.title{font-size: 40px; font-weight: 700; margin: 40px 0 30px 40px; display: none;}
+section.cardcontent > div.explain_wrap > div.p_wrap > p.explain{font-size: 20px; margin-left: 40px; line-height: 35px; display: none;}
+section.cardcontent > div.explain_wrap > div.p_wrap > button{
+    color: #fff; margin:40px 0 0 40px; background-color: transparent; outline: none; border: 1px solid #fff;
+    font-size: 25px; padding: 5px; border-radius: 5px; vertical-align: bottom; line-height: 1;transition: 800ms;
+}
+section.cardcontent > div.explain_wrap > div.p_wrap > button:hover{
+    box-shadow: 0 0 10px #fff, 0 0 20px rgb(93, 93, 93)
+}

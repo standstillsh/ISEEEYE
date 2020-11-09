@@ -30,7 +30,7 @@ function threejs() {
 
 
     // Light --------
-    let hemiLight = new THREE.HemisphereLight( 0xEBF7FD, 0xEBF7FD, 0.5 );
+    let hemiLight = new THREE.HemisphereLight( 0xEBF7FD, 0xEBF7FD, 1 );
     hemiLight.position.set( 0, 20, 20 );
     scene.add( hemiLight );
     
@@ -40,7 +40,7 @@ function threejs() {
     const mouse = new THREE.Vector2();
     
     // box --------
-    const boxGeo = new THREE.CubeGeometry(1.2, 2, 0.01);
+    const boxGeo = new THREE.CubeGeometry(1, 2, 0.01);
     const texture = new THREE.TextureLoader().load( './image/card/cardback.png' );
     const boxMat = new THREE.MeshStandardMaterial({color: 0xffffff, map: texture});
 
@@ -76,8 +76,12 @@ function threejs() {
   
     window.addEventListener("click", onMouseMove);
     const explain = $("div.explain_wrap");
-
-    const cardFront = "./image/cardFront/"+ Math.floor(Math.random() * 21) +".png";
+    const ranNum = Math.floor(Math.random() * 21);
+    const cardFront = "./image/cardFront/"+ ranNum  +".png";
+    const title = $("p.title_" + ranNum);
+    const explainTxt = $("p.explain_" + ranNum);
+    title.css("display", "block");
+    explainTxt.css("display", "block");
 
     function onMouseMove(e){
         e.preventDefault();
@@ -103,3 +107,15 @@ function threejs() {
 
 window.onload = threejs();
 
+
+const ReBtn = $("button.reloadBtn");
+const introWrap = $("section.intro");
+const StartBtn = $("button.startBtn");
+const explainwrap = $("div.explain_wrap");
+StartBtn.click(()=>{
+    introWrap.css({"opacity": 0, "display" : "none"});
+    explainwrap.css({"pointer-events": "all"})
+})
+ReBtn.click(()=>{
+    location.reload();
+})
