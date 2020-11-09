@@ -1,0 +1,157 @@
+#menu-card {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+}
+.card {
+  display: block;
+  position: absolute;
+  width: 150px;
+  height: 270px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  opacity: 0;
+  color: transparent;
+  position: absolute;
+  top: 0%;
+  left: 62vh;
+  padding: 10px;
+  font-size: 200%;
+  font-weight: bold;
+  
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+  
+  -moz-transform: translateY(-200px);
+  -webkit-transform: translateY(-200px);
+  -o-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  transform: translateY(-200px);
+}
+.card1 {
+  background: url("../image/menu-card1.png");
+  background-size: 100%;
+  z-index: 5; text-align: right;}
+.card2 {
+  background: url("../image/menu-card2.png");
+  background-size: 100%;
+  z-index: 4;text-align: right;}
+.card3 {
+  background: url("../image/menu-card3.png");
+  background-size: 100%;
+  z-index: 3;text-align: right;}
+.card4 {
+  background: url("../image/menu-card4.png");
+  background-size: 100%;
+  z-index: 2;text-align: right;}
+.card5 {
+  background: url("../image/menu-card5.png");
+  background-size: 100%;
+  z-index: 1;text-align: right;}
+
+  .spread .card1:hover{
+    box-shadow: 0 0 30px #fff;   
+  }
+  .spread .card2:hover{
+    box-shadow: 0 0 30px #fff;   
+  }
+  .spread .card3:hover{
+    box-shadow: 0 0 30px #fff;   
+  }
+  .spread .card4:hover{
+    box-shadow: 0 0 30px #fff;   
+  }
+  .spread .card5:hover{
+    box-shadow: 0 0 30px #fff;   
+  }
+
+.spread .card1 {
+  position: absolute;
+  left: 47vh;
+  bottom: 0%;
+  opacity: 1;
+  -webkit-transition: all 1.5s ease;
+-moz-transition: all 1.5s ease;
+-ms-transition: all 1.5s ease;
+-o-transition: all 1.5s ease;
+transition: all 1.5s ease;
+  
+-moz-transform: rotate(-60deg) translateY(-100px);
+-webkit-transform: rotate(-60deg) translateY(-100px);
+-o-transform: rotate(-60deg) translateY(-100px);
+-ms-transform: rotate(-60deg) translateY(-100px);
+transform: rotate(-60deg) translateY(-100px);
+}
+.spread .card2 {
+  position: absolute;
+  left: 55vh;
+  opacity: 1;
+  background-color: black;
+  -webkit-transition: all 1.5s ease;
+-moz-transition: all 1.5s ease;
+-ms-transition: all 1.5s ease;
+-o-transition: all 1.5s ease;
+transition: all 1.5s ease;
+  
+-moz-transform: rotate(-25deg) translateY(-170px);
+-webkit-transform: rotate(-25deg) translateY(-170px);
+-o-transform: rotate(-25deg) translateY(-170px);
+-ms-transform: rotate(-25deg) translateY(-170px);
+transform: rotate(-25deg) translateY(-170px);
+}
+.spread .card3 {
+  position: absolute;
+  left: 63vh;
+  opacity: 1;
+  background-color: black;
+  -webkit-transition: all 1.5s ease;
+-moz-transition: all 1.5s ease;
+-ms-transition: all 1.5s ease;
+-o-transition: all 1.5s ease;
+transition: all 1.5s ease;
+  
+-moz-transform: rotate(0deg) translateY(-200px);
+-webkit-transform: rotate(0deg) translateY(-200px);
+-o-transform: rotate(0deg) translateY(-200px);
+-ms-transform: rotate(0deg) translateY(-200px);
+transform: rotate(0deg) translateY(-200px);
+}
+
+.spread .card4 {
+  position: absolute;
+  left: 71vh;
+  opacity: 1;
+  background-color: black;
+  -webkit-transition: all 1.5s ease;
+-moz-transition: all 1.5s ease;
+-ms-transition: all 1.5s ease;
+-o-transition: all 1.5s ease;
+transition: all 1.5s ease;
+  
+-moz-transform: rotate(25deg) translateY(-170px);
+-webkit-transform: rotate(25deg) translateY(-170px);
+-o-transform: rotate(25deg) translateY(-170px);
+-ms-transform: rotate(25deg) translateY(-170px);
+transform: rotate(25deg) translateY(-170px);
+}
+
+.spread .card5 {
+  position: absolute;
+  left: 82vh;
+  opacity: 1;
+  background-color: black;
+  -webkit-transition: all 1.5s ease;
+-moz-transition: all 1.5s ease;
+-ms-transition: all 1.5s ease;
+-o-transition: all 1.5s ease;
+transition: all 1.5s ease;
+  
+-moz-transform: rotate(60deg) translateY(-100px);
+-webkit-transform: rotate(60deg) translateY(-100px);
+-o-transform: rotate(60deg) translateY(-100px);
+-ms-transform: rotate(60deg) translateY(-100px);
+transform: rotate(60deg) translateY(-100px);
+}

@@ -7,7 +7,11 @@
     <title>6789 I SEE EYE</title>
     <link href="./css/reset.css" rel="stylesheet"/>
     <link href="./css/common.css" rel="stylesheet"/>
-    <link href="./css/index.css" rel="stylesheet"/>
+
+    <link href="./css/intro.css" rel="stylesheet"/>
+
+    <link href="./css/spread.css" rel="stylesheet"/>
+
 </head>
 <body>
     <!-- wrap 시작 -->
@@ -15,89 +19,98 @@
         <!-- nav 시작 -->
         <section id="nav"> 
             <div id="menu-bar"></div>
-            <ul id="menu-items">
+               <!-- <ul id="menu-items">
                 <li>
                     <a href="./intro.html">
                         <div id="intro" class="menu-card">
-                            <!-- <span>Intro</span> -->
                         </div>
                     </a>
                 </li>
                 <li>
                     <a href="./about.html">
                     <div id="about" class="menu-card">
-                        <!-- <span>About</span> -->
                     </div>
                     </a>
                 </li>
                 <li>
                     <a href="./contents.html">
                         <div id="contents" class="menu-card">
-                            <!-- <span>Contents</span> -->
                         </div>
                     </a>
                 </li>
                 <li>
                     <a href="./video.html">
                         <div id="video" class="menu-card">
-                            <!-- <span>Video</span> -->
                         </div>
                     </a>
                 </li>
                 <li>
                     <a href="./team6789.html">
                         <div id="team" class="menu-card">
-                            <!-- <span>6789</span> -->
+                         
                         </div>
                     </a>
                 </li>
-            </ul>
+            </ul> -->
+            <div id="menu-card">
+                <!-- intro -->
+                <a href="./intro.html"><div class="card card1"> </div></a>
+                <!-- about -->
+                <a href="./about.html"><div class="card card2"> </div></a>
+                <!-- contents -->
+                <a href="./contents.html"><div class="card card3"> </div></a>
+                <!-- video -->
+                <a href="./video.html"><div class="card card4"> </div></a>
+                <!-- Team 6789 -->
+                <a href="./team6789.html"></a><div class="card card5"> </div></a>
+              </div>
         </section>
         <!-- nav 끝 -->
         <!-- 배경 -->
-        <div class="bgbox" id="backgroundtest1"></div>
-        <div class="bgbox" id="backgroundtest2"></div>
-        <div class="bgbox" id="backgroundtest3"></div>
-        <!-- main contents 시작 -->
-        <section class="main contents">
-            <div id="main-wrap">
-                <div id="inform1">
-                    <span id="genre-name">
-                        NEW MEDIA
-                    </span>
-                    <span id="univ-name">
-                        Kaywon University Of Art & Design
-                    </span>
-                    <span id="major-name">
-                        Digital Media Design
-                    </span>
-                    <span id="genre-name">
-                        NEW MEDIA
-                    </span>
-                </div>
-                <div id="inform2">
-                    <div id="inform2-1">
-                        <span id="exhibit">
-                            Graduation Exhibition <br />
-                            2020.11.20 ~ 11.22
-                        </span>
-                    </div>
-                    <div id="inform2-2">
-                        <img src="./image/logo.png" width="842">
-                    </div>
-                    <span id="team-name">
-                        Team. 6789 <br />
-                        Prof. Cho Gun Hee
-                    </span>
-                </div>
+        <div>
+            <div class="bgbox" id="backgroundtest1"></div>
+            <div class="bgbox" id="backgroundtest2"></div>
+            <div class="bgbox" id="backgroundtest3"></div>
+        </div>
+        <!-- 로고 -->
+        <div id="logo">
+            <a href="./index.html">
+                <img src="./image/logo.png" width="120">
+            </a>
+        </div>
+        <!-- intro contents 시작 -->
+        <section class="intro contents">
+            <div id="intro-wrap">
+                <h1>
+                    PROJECT INTRO.
+                </h1>
+                <p>
+                    <span>
+                        경기 불황이 심화 될수록 운세를 보는 사람들이 늘어난다
+                    </span> <br />
+                    경제 위기가 심화될수록 불확실성과 불안감에 마음의 편안함을 위해 운세를 보는 사람들이 늘어난다고 한다.  <br />
+                    이러한 추세는 현재 코로나로 인해 사회 전반적인 경제가 침체된 상황에서도 비슷하게 나타날 것이라고 생각한다.
+                </p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <p>
+                    <span>
+                        마음의 위안을 받기 위해 운세를 보는 사람들
+                    </span> <br />
+                    운세를 본 이유에 대한 설문조사 결과 마음의 위안/걱정의 감소가 가장 높았고 불확실성의 해소가 그 다음이었다. <br />
+                    이를 통해 마음의 위안을 받고 불확실로부터 오는 불안함을 덜기 위해 운세를 본다는 것을 알 수 있었다.
+                </p>
             </div>
         </section>
-        <!-- main contents 끝 -->
+        <!-- intro contents 끝 -->
     </div>
     <!-- wrap 끝 -->
 <!-- Script -->
 <script src="./vender/jquery/jquery.min.js"></script>
 <!-- 메뉴 스크립트 -->
 <script src="./js/menu.js" type="text/javascript"></script>
+<script src="./js/spread.js" type="text/javascript"></script>
 </body>
 </html>
