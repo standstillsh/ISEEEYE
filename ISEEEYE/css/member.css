@@ -85,5 +85,19 @@ transform: translate3d(140%,0,-200px);
     background-image: url(../image/members/4.jpg)
 }
 #slide5 {
-    background-image: url(../image/members/5.jpg)
+    background-image: url(../image/members/5.jpg);
+}
+
+.slides > div.darker {
+    background-color: #000000;
+    height: 100%; width:100%; display: block; position: absolute; top:0;
+    transition: opacity 500ms ease-in;
+}
+
+.unselected {
+    opacity: 0.6;
+}
+
+.selected {
+    opacity: 0;
 }
