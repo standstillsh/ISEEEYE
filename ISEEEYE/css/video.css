@@ -1,0 +1,15 @@
+/* video.css */
+div.wrap > section.contents > div:first-child{
+
+}
+
+/* 페이지 타이틀 */
+div.wrap > section.contents > div:first-child > h1:first-child{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+div.wrap > section.contents > div:first-child > p {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.7;
+}
