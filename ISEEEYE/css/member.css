@@ -2,10 +2,11 @@ div.wrap > section.member {
     position: absolute; 
     /* border: 1px solid red;  */
     width: 50vw; height: 510px;
-    top:43%; left: 50%;
+    top:50%; left: 50%;
     transform: translate(-50%, -50%);
     /* margin-right: 100px; */
     /* transition: all ease-in-out 500ms; */
+    z-index: 1;
 }
 
 [type=radio] {
@@ -13,7 +14,7 @@ display: none;
 }
 
 #slider {
-height: 55vw;
+height: 100vh;
 position: relative;
 perspective: 1000px;
 transform-style: preserve-3d;
@@ -21,8 +22,8 @@ transform-style: preserve-3d;
 
 #slider label {
 margin: auto;
-width: 30%;
-height: 80%;
+width: 313px;
+height: 537px;
 border-radius: 4px;
 position: absolute;
 left: 0; right: 0;
@@ -67,21 +68,22 @@ transform: translate3d(140%,0,-200px);
 
 .slides {
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
   
 #slide1 {
-    background-image: url();
+    background-image: url(../image/members/1.jpg)
 }
 #slide2 {
-    background: #4CAF50;
+    background-image: url(../image/members/2.jpg)
 }
 #slide3 {
-    background: #CDDC39;
+    background-image: url(../image/members/3.jpg)
 }
 #slide4 {
-    background: #FFC107;
+    background-image: url(../image/members/4.jpg)
 }
 #slide5 {
-    background: #FF5722;
+    background-image: url(../image/members/5.jpg)
 }
