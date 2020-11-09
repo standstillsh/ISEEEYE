@@ -8,6 +8,8 @@
     <link href="./css/reset.css" rel="stylesheet"/>
     <link href="./css/common.css" rel="stylesheet"/>
     <link href="./css/cardcontent.css" rel="stylesheet"/>
+    <link href="./css/spread.css" rel="stylesheet"/>
+
 </head>
 <body>
     <!-- wrap 시작 -->
@@ -15,43 +17,18 @@
         <!-- nav 시작 -->
         <section id="nav"> 
             <div id="menu-bar"></div>
-            <ul id="menu-items">
-                <li>
-                    <a href="./intro.html">
-                        <div id="intro" class="menu-card">
-                            <!-- <span>Intro</span> -->
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./about.html">
-                    <div id="about" class="menu-card">
-                        <!-- <span>About</span> -->
-                    </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./contents.html">
-                        <div id="contents" class="menu-card">
-                            <!-- <span>Contents</span> -->
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./video.html">
-                        <div id="video" class="menu-card">
-                            <!-- <span>Video</span> -->
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./team6789.html">
-                        <div id="team" class="menu-card">
-                            <!-- <span>6789</span> -->
-                        </div>
-                    </a>
-                </li>
-            </ul>
+            <div id="menu-card">
+                <!-- intro -->
+                <a href="./intro.html"><div class="card card1"> </div></a>
+                <!-- about -->
+                <a href="./about.html"><div class="card card2"> </div></a>
+                <!-- contents -->
+                <a href="./contents.html"><div class="card card3"> </div></a>
+                <!-- video -->
+                <a href="./video.html"><div class="card card4"> </div></a>
+                <!-- Team 6789 -->
+                <a href="./team6789.html"></a><div class="card card5"> </div></a>
+              </div>
         </section>
 
         <!-- 배경 -->
@@ -88,5 +65,6 @@
 <script src="./js/cardcontent.js"></script>
 <!-- 메뉴 스크립트 -->
 <script src="./js/menu.js" type="text/javascript"></script>
+<script src="./js/spread.js" type="text/javascript"></script>
 </body>
 </html>
