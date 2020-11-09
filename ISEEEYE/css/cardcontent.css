@@ -5,5 +5,6 @@ section.cardcontent > div.explain_wrap{
     top: 50%; transform: translateY(-50%); left: 30%; opacity: 0; transition: 800ms;
 }
 section.cardcontent > p > span{}
-section.cardcontent > div.explain_wrap > p.title{font-size: 40px; margin: 40px 0 40px 40px;}
+section.cardcontent > div.explain_wrap > p.title{font-size: 40px; margin: 40px 0 40px 40px; display: none;}
+section.cardcontent > div.explain_wrap > p.title_2{font-size: 40px; margin: 40px 0 40px 40px; display: block;}
 section.cardcontent > div.explain_wrap > p.explain{font-size: 20px; margin-left: 40px;}
