@@ -78,7 +78,6 @@ function threejs() {
     const explain = $("div.explain_wrap");
 
     const cardFront = "./image/cardFront/"+ Math.floor(Math.random() * 21) +".png";
-    console.log(Math.floor(Math.random() * 22));
 
     function onMouseMove(e){
         e.preventDefault();
