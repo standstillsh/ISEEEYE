@@ -8,7 +8,7 @@ function threejs() {
     var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000 );
     var renderer = new THREE.WebGLRenderer({ alpha: true });
     document.getElementById("threejs").appendChild(renderer.domElement);
-    control = new THREE.OrbitControls(camera, renderer.domElement);
+    // control = new THREE.OrbitControls(camera, renderer.domElement);
 
     //SIZE ---------
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -33,40 +33,51 @@ function threejs() {
     let hemiLight = new THREE.HemisphereLight( 0xEBF7FD, 0xEBF7FD, 0.5 );
     hemiLight.position.set( 0, 20, 20 );
     scene.add( hemiLight );
+    
+
 
     const raycaster = new THREE.Raycaster();
     const mouse = new THREE.Vector2();
     
     // box --------
-    const boxGeo = new THREE.CubeGeometry(1.2, 2, 0.2);
-    const texture = new THREE.TextureLoader().load( '../image/card/cardback.png' );
+    const boxGeo = new THREE.CubeGeometry(1.2, 2, 0.01);
+    const texture = new THREE.TextureLoader().load( './image/card/cardback.png' );
     const boxMat = new THREE.MeshStandardMaterial({color: 0xffffff, map: texture});
 
 
 
-    
-    for(let i = 0; i < 22 ; i++){
+    let boxGroup = []
+    for(let i = 0; i <200 ; i++){
         const box = new THREE.Mesh(boxGeo, boxMat);
-        box.position.x = (Math.random()-0.5)*15;
-        box.position.y = (Math.random()-0.5)*15;
-        box.position.z = (Math.random()-0.5)*15;
+        box.position.x = (Math.random()-0.25)*50;
+        box.position.y = (Math.random()-0.25)*50;
+        box.rotation.y = (Math.random()-0.25) * 5;
+        box.position.z = (Math.random()-0.25)*50;
         scene.add(box);
+        boxGroup.push(box);
     }
- 
     
 
 
     //RENDER-------------------------------------------------------------------------------
+    let cameraTurn = true;
     const renderScene = new function renderScene() {
         requestAnimationFrame(renderScene);
-        
+        if(cameraTurn){
+            camera.rotation.y -= 0.001;
+        }else{
+            camera.rotation.y = 0.02;
+        }
 
         renderer.render(scene,camera);
-    }   
+    }
 
 
   
     window.addEventListener("click", onMouseMove);
+    const explain = $("div.explain_wrap");
+
+    const cardFront = "./image/cardFront/"+ Math.floor(Math.random() * 21) +".png";
 
     function onMouseMove(e){
         e.preventDefault();
@@ -75,12 +86,20 @@ function threejs() {
         raycaster.setFromCamera(mouse, camera);
         var inter = raycaster.intersectObjects(scene.children, true);
         for(var i = 0 ; i < inter.length ; i++){
-            inter[i].object.material.color.set(0xff0000);
+            cameraTurn = false;
+            inter[i].object.material.map = THREE.ImageUtils.loadTexture(cardFront);
+            boxGroup[i].material.needsUpdate = true;
+            this.tl = new TimelineMax();
+            this.tl.to(inter[i].object.scale, 0.5, {x : 5, y : 5, ease:Expo.easeOut});
+            this.tl.to(inter[i].object.rotation, 0.5, {y : -0.5, ease:Expo.easeOut});
+            this.tl.to(inter[i].object.position, 2, {x : 8, y : 0, z : 5, ease:Expo.easeOut});
+
+            setTimeout(()=>{
+                explain.css("opacity", 1);
+            }, 1000);
         }
     }
-
-
-
 }
+
 window.onload = threejs();
 
