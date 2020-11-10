@@ -97,7 +97,6 @@ function threejs() {
             this.tl.to(inter[i].object.scale, 0.5, {x : 5, y : 5, ease:Expo.easeOut});
             this.tl.to(inter[i].object.rotation, 0.5, {y : -0.5, ease:Expo.easeOut});
             this.tl.to(inter[i].object.position, 2, {x : 8, y : 0, z : 5, ease:Expo.easeOut});
-
             setTimeout(()=>{
                 explain.css("opacity", 1);
             }, 1000);
@@ -105,7 +104,6 @@ function threejs() {
     }
 }
 
-window.onload = threejs();
 
 
 const ReBtn = $("button.reloadBtn");
@@ -114,7 +112,8 @@ const StartBtn = $("button.startBtn");
 const explainwrap = $("div.explain_wrap");
 StartBtn.click(()=>{
     introWrap.css({"opacity": 0, "display" : "none"});
-    explainwrap.css({"pointer-events": "all"})
+    explainwrap.css({"pointer-events": "all"});
+    threejs();
 })
 ReBtn.click(()=>{
     location.reload();
