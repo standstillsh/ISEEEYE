@@ -22,7 +22,7 @@ div.wrap {
 }
 div.wrap > section#nav {
     position: fixed; left: 0; top: 0;
-    z-index: 5; 
+    z-index: 99; 
     height: 100vh; width: 18vw;
     /* border: 1px solid red; */
 }
@@ -76,31 +76,31 @@ div.wrap > section#nav > ul#menu-items > li > a > div.menu-card {
 div.wrap > section#nav > ul#menu-items > li > a > div#intro {
     transform: rotate(30deg);
     top: 0; left: 0;
-    z-index: 20;
+    z-index: 98;
     background-image: url('../image/menu-card1.png');
 }
 div.wrap > section#nav > ul#menu-items > li > a > div#about {
     transform: rotate(60deg);
     top: 100px; left: 120px;
-    z-index: 19;
+    z-index: 97;
     background-image: url('../image/menu-card2.png');
 }
 div.wrap > section#nav > ul#menu-items > li > a > div#contents {
     transform: rotate(90deg);
     top: 230px; left: 170px;
-    z-index: 18;    
+    z-index: 96;    
     background-image: url('../image/menu-card3.png');
 }
 div.wrap > section#nav > ul#menu-items > li > a > div#video {
     transform: rotate(120deg);
     bottom: 100px; left: 120px;
-    z-index: 17;
+    z-index: 95;
     background-image: url('../image/menu-card4.png');
 }
 div.wrap > section#nav > ul#menu-items > li > a > div#team {
     transform: rotate(150deg);
     bottom: 0; left: 0;
-    z-index: 16;
+    z-index: 94;
     background-image: url('../image/menu-card5.png');
 }
 /* div.menu-car hover 호버 */
@@ -139,6 +139,7 @@ div.wrap > div#logo {
     position: absolute;
     top: 20px;
     right: 20px;
+    z-index: 9999;
 }
 
 /* 배경 원 요소 회전 */
