@@ -22,7 +22,7 @@
                 IsMouseIn = false;
                 console.log(IsMouseIn);
                 $('#menu-items').css({
-                    'left' : -150 + '%'
+                    'left' : -180 + '%'
                 });
             }
         });
